@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "com.otzaria.book-catalog",
+  "name": "אוצר הספרים",
+  "version": "0.1.4",
+  "description": "מידע ביבליוגרפי על ספרים ומחבריהם: מהדורות, מקום ושנת הדפסה, מדפיס, ובאילו בתי כנסת, ישיבות וספריות הספר נמצא. זמין גם בלחיצה ימנית על טקסט מסומן",
+  "author": "Yair Daniel",
+  "minAppVersion": "0.9.97",
+  "sdkVersion": "1.x",
+  "stability": "experimental",
+  "entrypoint": "index.html",
+  "permissions": [
+    "app.startup_contributions",
+    "reader.context_menu",
+    "reader.open",
+    "library.books.read",
+    "library.content.read",
+    "events.subscribe:theme.changed"
+  ],
+  "contributes": {
+    "toolTab": {
+      "title": "אוצר הספרים",
+      "order": 210,
+      "defaultPinned": false,
+      "iconName": "book_24_regular"
+    },
+    "startup": {
+      "contextMenuItems": [
+        {
+          "id": "catalog-lookup",
+          "title": "אוצר הספרים: מידע על הטקסט המסומן",
+          "icon": "book_search_24_regular",
+          "openPlugin": true
+        }
+      ]
+    }
+  }
+}

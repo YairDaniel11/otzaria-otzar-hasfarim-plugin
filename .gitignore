@@ -1,0 +1,3 @@
+*.otzplugin
+__pycache__/
+tools/

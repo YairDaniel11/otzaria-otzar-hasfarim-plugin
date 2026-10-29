@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>אוצר הספרים</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="home">
+<div class="wrap">
+  <header class="topbar">
+    <div class="brand">
+      <svg class="logo" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M9 8h7M9 12h5"/></svg>
+      <span>אוצר הספרים</span>
+    </div>
+    <p class="tagline">חפשו ספר או מחבר, וגלו מהדורות, מקורות ופרטים</p>
+    <label class="search">
+      <svg class="sicon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="חיפוש ספר או מחבר…" autocomplete="off" aria-label="חיפוש ספר או מחבר" />
+      <button id="clearBtn" class="clearbtn" type="button" hidden aria-label="נקה חיפוש">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </label>
+    <div class="chips" role="tablist" aria-label="סוג תוצאות">
+      <button class="chip on" data-type="all" type="button">הכל</button>
+      <button class="chip" data-type="books" type="button">ספרים</button>
+      <button class="chip" data-type="authors" type="button">מחברים</button>
+    </div>
+  </header>
+  <div id="demoNote" class="note" hidden>נתוני דמה בלבד, הקטלוג האמיתי טרם חובר.</div>
+  <div id="selBanner" class="banner" hidden></div>
+  <main class="main">
+    <section id="listPane" class="pane list" aria-live="polite"></section>
+    <section id="detailPane" class="pane detail" hidden></section>
+  </main>
+  <div id="toast" class="toast" hidden></div>
+</div>
+<script src="data/cat-index.js"></script>
+<script src="js/catalog-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
