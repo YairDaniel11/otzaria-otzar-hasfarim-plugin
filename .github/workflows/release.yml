@@ -63,7 +63,7 @@ jobs:
           generate_release_notes: true
           files: ${{ steps.otzaria.outputs.plugin-file }}
           body: |
-            ## ביוגרפיות — ${{ steps.v.outputs.tag }}
+            ## אוצר הספרים — ${{ steps.v.outputs.tag }}
 
             ### התקנה
             מי שהתקין מהחנות מקבל את העדכון אוטומטית. להתקנה ידנית הורידו את
