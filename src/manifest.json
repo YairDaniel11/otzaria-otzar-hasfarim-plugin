@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "com.otzaria.book-catalog",
   "name": "אוצר הספרים",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "מידע ביבליוגרפי על ספרים ומחבריהם: מהדורות, מקום ושנת הדפסה, מדפיס, ובאילו בתי כנסת, ישיבות וספריות הספר נמצא. זמין גם בלחיצה ימנית על טקסט מסומן",
   "author": "Yair Daniel",
   "minAppVersion": "0.9.97",
